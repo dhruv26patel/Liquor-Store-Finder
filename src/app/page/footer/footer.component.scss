@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway');
+
+.footer {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    #content-right {
+        p { 
+            color: #20303c;
+            font-family: 'Chakra Petch', sans-serif;
+        }
+
+        tr {
+            color: #778188;
+        }
+    }
+
+    #content-left {
+
+        p { 
+            color: #20303c;
+            font-family: 'Chakra Petch', sans-serif;
+        }
+
+        tr {
+            font-family: 'Chakra Petch', sans-serif;
+            color: #778188;
+        }
+
+    }
+
+    // .content-left {
+    //     margin: 0;
+    //     padding-top: 20px;
+    //     padding-left: 40px;
+    // }
+}

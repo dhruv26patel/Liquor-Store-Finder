@@ -1,0 +1,6 @@
+<div *ngIf="places" id="results">
+  <div *ngFor="let place of places">
+    <app-result [name]="place.name"></app-result>
+  </div>
+</div>
+

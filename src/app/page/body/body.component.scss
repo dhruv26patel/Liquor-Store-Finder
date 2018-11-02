@@ -1,0 +1,102 @@
+#body {
+    background-image: url('/assets/store.jpeg');
+    //background-color: magenta;
+    background-size: cover;
+    width: 100%;
+    min-height: 86vh;
+    margin: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #locationDisable { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top:100px;
+
+        h1.logo {
+            left:310px;
+            color: #daeaf9;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 4em;
+            margin: 0;
+        }
+        
+        #inputBox {
+            width: 80%;
+            height: 40px;
+            font-size: 40px;
+            margin: 20px;
+        }
+
+        
+        // #button {
+        //     height: 2.5rem;
+        //     color: #960d0d;
+        //     border: #fff solid 0.2rem;
+        //     font-size: 1.3rem;
+        //     font-weight: bold;
+        //     border-radius: 2rem;
+        //     text-decoration: none;
+        // }
+
+        .buttonSearch {
+            height: 2.5rem;
+            color: #960d0d;
+            border: #fff solid 0.2rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 2rem;
+            text-decoration: none;
+        }
+    }
+
+    #locationEnable {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1.logo {
+            color: #daeaf9;
+            align-items: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 4em;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    
+        #inputBox {
+            width: 80%;
+            height: 40px;
+            font-size: 40px;
+        }
+
+        #button{
+            width: 150px;
+            height: 50px;
+            font-size: 30px;
+            color: #739da5;
+            border-radius: 2rem;
+            outline: 0;
+        }
+    }
+}
+
+@media (max-width:630px){
+    #body {
+        #locationDisable { 
+            h1.logo {
+                color: green;
+                font-size: 100%;
+            }
+        }
+    }
+}

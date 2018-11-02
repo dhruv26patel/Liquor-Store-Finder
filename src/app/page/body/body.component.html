@@ -1,0 +1,20 @@
+<div id="body">
+
+<div id="locationDisable" *ngIf="!userLocationEnable">
+ <h1 class="logo">Enable Location Service or Enter Location</h1>
+ <button class="buttonSearch" id="buttonSearch" (click)="enableLocationService()">Enable Location Service</button>
+ <input id="inputBox" type="text" [(ngModel)]="location" value="">
+<button class="buttonSearch" id="buttonSearch" (click)="search()">Search</button>
+</div> 
+<div id="locationEnable" *ngIf="userLocationEnable">
+    <h1 class="logo">Enter The Place you want to search:</h1>
+    <input id="inputBox" type="text" [(ngModel)]="inputText" value="">
+    <h3>{{inputText}}</h3>
+    <button id="button" (click)="search()">Search</button>
+    <app-results [childData]="response"></app-results>
+</div>
+</div>
+
+
+
+
